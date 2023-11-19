@@ -2,7 +2,7 @@
 {
     public partial class MainPage : ContentPage
     {
-        int count = 0;
+        public static double count = 32;
 
         public MainPage()
         {
@@ -11,7 +11,7 @@
 
         private void OnCounterClicked(object sender, EventArgs e)
         {
-            count++;
+            count+=5;
 
             if (count == 1)
                 CounterBtn.Text = $"Clicked {count} time";
